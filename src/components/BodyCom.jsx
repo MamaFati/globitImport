@@ -1,5 +1,7 @@
 import AboutUs from "./AboutUs";
 import Carousel from "./Carosel";
+import ImportServices from "./Services";
+import TrustedBy from "./TrustedBy";
 
 function HeroSection() {
   return (
@@ -7,6 +9,8 @@ function HeroSection() {
       <main>
         <Carousel />
         <AboutUs />
+        <ImportServices />
+        <TrustedBy />
       </main>
     </>
   );

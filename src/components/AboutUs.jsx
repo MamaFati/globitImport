@@ -1,4 +1,4 @@
-import AboutImg from "../assets/vecteezy_young-confident-woman-engineer-smiling-and-using-radio_7424132.jpg";
+import AboutImg from "../assets/business-team-working-laptop.jpg";
 // import "../styles/animations.css"; // Import custom styles
 
 const AboutUs = () => {
@@ -18,7 +18,7 @@ const AboutUs = () => {
           </h2>
           <p className="text-lg">
             Say goodbye to the{" "}
-            <strong className="font-bold">overwhelming stress</strong>
+            <strong className="font-bold">overwhelming stress </strong>
             of sourcing reliable suppliers, ensuring{" "}
             <strong className="font-bold">top-tier quality</strong>, and
             managing complex logistics.
