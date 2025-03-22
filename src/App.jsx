@@ -3,6 +3,7 @@ import HeroSection from "./components/BodyCom";
 // import NavBar from "./components/Header.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/ Header";
+import Footer from "./components/footer";
 function App() {
   return (
     <>
@@ -16,7 +17,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/appointment" element={<MainApp />} /> */}
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </>
   );

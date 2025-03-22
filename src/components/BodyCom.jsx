@@ -1,6 +1,10 @@
 import AboutUs from "./AboutUs";
+
+import BlogSlider from "./BlogSlider";
 import Carousel from "./Carosel";
+import ContactSection from "./Contact";
 import ImportServices from "./Services";
+import TestimonialSection from "./Testimonial";
 import TrustedBy from "./TrustedBy";
 
 function HeroSection() {
@@ -11,6 +15,9 @@ function HeroSection() {
         <AboutUs />
         <ImportServices />
         <TrustedBy />
+        <TestimonialSection />
+        <BlogSlider />
+        <ContactSection />
       </main>
     </>
   );

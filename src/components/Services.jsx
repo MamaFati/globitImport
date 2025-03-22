@@ -62,7 +62,7 @@ const ImportServices = () => {
   };
 
   return (
-    <div className="bg-white py-16">
+    <section className="bg-white py-16">
       <div className="max-w-3xl mx-auto text-center px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Our Services
@@ -95,7 +95,7 @@ const ImportServices = () => {
           ))}
         </Slider>
       </div>
-    </div>
+    </section>
   );
 };
 
