@@ -34,7 +34,7 @@ function NavBar() {
     setExpandedIndex(expandedIndex === index ? null : index);
 
   const navLinkClasses = ({ isActive }) =>
-    `block py-2 px-4 text-lg font-medium transition-colors ${
+    `block py-2 px-1 lg:px-4 md:px-4 text-lg font-medium transition-colors ${
       isActive ? "text-blue-600 font-bold" : "text-gray-700 hover:text-blue-500"
     }`;
 
@@ -43,7 +43,7 @@ function NavBar() {
       <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <NavLink to="/" className="flex items-center" onClick={closeMenu}>
-          <img src={logo} className="h-12 w-auto md:h-16" alt="Logo" />
+          <img src={logo} className="h-16 w-auto md:h-16" alt="Logo" />
         </NavLink>
 
         {/* Desktop Menu */}
@@ -80,10 +80,10 @@ function NavBar() {
 
       {/* Mobile Fullscreen Menu */}
       {isOpen && (
-        <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-end z-50">
+        <div className="fixed inset-0 bg-gray-50  bg-opacity-50 flex justify-end z-50">
           {/* Sliding Panel */}
           <div
-            className={`bg-gray-400 text-gray-700 flex flex-col items-center justify-center w-[80%] h-full transition-transform duration-500 ${
+            className={`bg-gray-100 text-gray-700 flex flex-col items-center justify-center w-[80%] h-full transition-transform duration-500 ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >

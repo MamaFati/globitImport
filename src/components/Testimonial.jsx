@@ -1,4 +1,4 @@
-import "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -43,29 +43,37 @@ const TestimonialSection = () => {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 9000,
     centerMode: true,
+    arrows: false,
+    customPaging: (i) => (
+      <div className="w-3 h-3 bg-gray-300 rounded-full transition-all duration-300 hover:bg-blue-500"></div>
+    ),
+    appendDots: (dots) => (
+      <div className="flex justify-center gap-2 mt-4">{dots}</div>
+    ),
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },
       },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
     ],
   };
 
   return (
-    <section className="m-auto py-16 px-5 bg-gray-50 w-full">
+    <section className="m-auto py-16 px-5 bg-gradient-to-r from-blue-50 to-gray-100 w-full">
+      {/* Section Title */}
       <div className="text-center w-full lg:w-[50%] m-auto mb-12">
         <h2 className="text-3xl font-bold mb-4 text-gray-900">
           Trusted by Our Global Partners
@@ -76,21 +84,23 @@ const TestimonialSection = () => {
           with us across the globe.
         </p>
       </div>
+
+      {/* Slider */}
       <div className="w-full lg:w-[80%] m-auto">
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="p-4">
-              <div className="bg-white shadow-lg rounded-lg p-6 text-center">
+              <div className="bg-white shadow-xl   rounded-lg p-6 text-center transition-transform duration-300 hover:scale-105">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-20 h-20 rounded-full object-cover m-auto mb-4 border-2 border-blue-500"
+                  className="w-20 h-20 rounded-full object-cover m-auto mb-4 border-4 border-blue-500 shadow-md"
                 />
                 <h5 className="text-lg font-semibold text-gray-900">
                   {testimonial.name}
                 </h5>
                 <p className="text-sm text-gray-500 mb-3">{testimonial.role}</p>
-                <div className="p-4">
+                <div className="p-3 bg-gray-100 rounded-lg shadow-md">
                   <p className="text-gray-700 italic">
                     &quot;{testimonial.quote}&quot;
                   </p>
