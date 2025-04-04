@@ -9,7 +9,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { IoClose, IoMenu, IoLogoTiktok } from "react-icons/io5";
-import logo from "../assets/IMG-20250308-WA0016-removebg-preview.png";
+import logo from "../assets/globitLogo.png";
 
 const navItems = [
   { path: "/", label: "Home" },
@@ -39,11 +39,11 @@ function NavBar() {
     }`;
 
   return (
-    <nav className="bg-white shadow-lg fixed top-0 left-0 right-0 z-50 font-serif">
-      <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
+    <nav className="bg-white shadow-lg fixed top-0 left-0 right-0 z-50 font-serif ">
+      <div className="max-w-screen-xl mx-auto flex items-center h-20 justify-between px-4  ">
         {/* Logo */}
         <NavLink to="/" className="flex items-center" onClick={closeMenu}>
-          <img src={logo} className="h-16 w-auto md:h-16" alt="Logo" />
+          <img src={logo} className="  " id="logo" alt="Logo" />
         </NavLink>
 
         {/* Desktop Menu */}
@@ -71,7 +71,7 @@ function NavBar() {
         {/* Hamburger Icon */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-700 focus:outline-none"
+          className="md:hidden text-gray-700 focus:outline-none  "
           aria-label="Toggle Menu"
         >
           <IoMenu size={30} />

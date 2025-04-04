@@ -1,15 +1,11 @@
 import "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/IMG-20250308-WA0016-removebg-preview.png";
 
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-const LogoImg = () => {
-  return <img src={logo} className="h-12 w-auto md:h-32" alt="Logo" />;
-};
 const ContactUs = () => {
   return (
-    <div className="text-center md:text-left">
+    <section className="text-center md:text-left">
       <h3 className="text-lg font-bold mb-2">Contact Info</h3>
       <p className="text-sm mb-2">
         <a
@@ -51,13 +47,13 @@ const ContactUs = () => {
           +233 544 347 239
         </a> */}
       </p>
-    </div>
+    </section>
   );
 };
 
 const QuickLinks = () => {
   return (
-    <div className="text-center">
+    <section className="text-center">
       <h3 className="text-lg font-bold mb-2">Quick Links</h3>
       <ul className="space-y-2">
         <li>
@@ -104,7 +100,7 @@ const QuickLinks = () => {
           </NavLink>
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 
@@ -123,7 +119,7 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="text-center md:text-right">
+    <section className="text-center md:text-right">
       <h3 className="text-lg font-bold mb-4">Follow Us</h3>
       <div className="flex justify-center md:justify-end space-x-4">
         {socialIcons.map(({ icon, link }, index) => (
@@ -138,16 +134,15 @@ const SocialLinks = () => {
           </a>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-500 text-white py-8">
+    <footer className="bg-gray-700  text-white py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-2">
-          <LogoImg />
           <ContactUs />
           <QuickLinks />
           <SocialLinks />

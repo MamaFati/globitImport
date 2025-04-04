@@ -9,28 +9,28 @@ import partner4 from "../assets/avatar.png";
 
 const testimonials = [
   {
-    name: "Ahmed Hassan",
+    name: "Abeam",
     role: "Managing Director, Sahara Imports",
     image: partner1,
     quote:
       "Working with Globit Export has elevated our business. Their commitment to quality and timely delivery is unparalleled.",
   },
   {
-    name: "Maria Gonzalez",
+    name: " Mikdir",
     role: "Founder, Pacific Traders",
     image: partner2,
     quote:
       "Globit Export has been an exceptional partner. Their transparency, efficiency, and product range exceeded our expectations.",
   },
   {
-    name: "Chen Wei",
+    name: "Fati",
     role: "Operations Manager, Eastern Supplies",
     image: partner3,
     quote:
       "We've partnered with Globit Export for years. Their global network and reliability have helped us scale smoothly.",
   },
   {
-    name: "Emily Johnson",
+    name: "Nelson",
     role: "CEO, Johnson Global Solutions",
     image: partner4,
     quote:
@@ -72,7 +72,7 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="m-auto py-16 px-5 bg-gradient-to-r from-blue-50 to-gray-100 w-full">
+    <section className="m-auto py-5 px-2 bg-gradient-to-r from-blue-50 to-gray-100 w-full">
       {/* Section Title */}
       <div className="text-center w-full lg:w-[50%] m-auto mb-12">
         <h2 className="text-3xl font-bold mb-4 text-gray-900">
@@ -100,7 +100,7 @@ const TestimonialSection = () => {
                   {testimonial.name}
                 </h5>
                 <p className="text-sm text-gray-500 mb-3">{testimonial.role}</p>
-                <div className="p-3 bg-gray-100 rounded-lg shadow-md">
+                <div className="p-3">
                   <p className="text-gray-700 italic">
                     &quot;{testimonial.quote}&quot;
                   </p>

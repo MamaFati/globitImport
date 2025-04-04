@@ -10,7 +10,10 @@
     opacity: 1;
   }
 }
-
+#logo {
+  width: 150px;
+  height: auto;
+}
 @keyframes slideInLeft {
   from {
     opacity: 0;

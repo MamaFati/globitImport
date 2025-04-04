@@ -31,7 +31,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-16 px-6 md:px-16 ">
+    <section className="bg-white py-16 px-6 md:px-16 ">
       <div className="max-w-6xl mx-auto  p-10   grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6 lg:gap-9">
         <div>
           <h2 className="text-4xl font-extrabold text-center mb-4 text-gray-800">

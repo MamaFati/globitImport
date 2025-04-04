@@ -1,4 +1,8 @@
 import React from "react";
+import blogImage1 from "../assets/blog1.jpeg";
+import blogImage2 from "../assets/blog2.jpg";
+import blogImage3 from "../assets/blog3.webp";
+import blogImage4 from "../assets/blog4.avif";
 import { Link } from "react-router-dom";
 
 const blogPosts = [
@@ -7,34 +11,34 @@ const blogPosts = [
     title: "Maximize Your Global Reach: Importing Simplified",
     category: "Importing Tips",
     date: "March 20, 2025",
-    image: "https://via.placeholder.com/400x250",
+    image: blogImage1,
   },
   {
     id: 2,
     title: "How Globit Builds Trust with Partners Worldwide",
     category: "Partnerships",
     date: "March 15, 2025",
-    image: "https://via.placeholder.com/400x250",
+    image: blogImage2,
   },
   {
     id: 3,
     title: "Top Logistics Strategies to Streamline Your Imports",
     category: "Logistics",
     date: "March 10, 2025",
-    image: "https://via.placeholder.com/400x250",
+    image: blogImage3,
   },
   {
     id: 4,
     title: "Quality Assurance: How We Vet Our Products",
     category: "Quality Control",
     date: "March 5, 2025",
-    image: "https://via.placeholder.com/400x250",
+    image: blogImage4,
   },
 ];
 
 const BlogSlider = () => {
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-6 text-center mb-8">
         <h2 className="text-3xl font-bold mb-2">Latest Insights & Tips</h2>
         <p className="text-gray-600 mb-6">

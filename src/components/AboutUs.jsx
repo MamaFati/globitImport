@@ -10,12 +10,13 @@ const AboutUs = () => {
           className="md:w-1/2 text-gray-700 space-y-6 animate-slideInLeft"
           style={{ "--animation-duration": "1s", "--animation-delay": "0.2s" }}
         >
-          <h5 className="text-blue-500 font-semibold uppercase text-sm pt-4 tracking-widest">
-            Your Trusted Import Partner
-          </h5>
           <h2 className="text-4xl font-extrabold text-gray-900 leading-tight">
             Who We Are
           </h2>
+          <h3 className="text-blue-500 font-semibold uppercase text-sm pt-4 tracking-widest">
+            Your Trusted Import Partner
+          </h3>
+
           <p className="text-lg">
             Say goodbye to the{" "}
             <strong className="font-bold">overwhelming stress </strong>
@@ -57,21 +58,11 @@ const AboutUs = () => {
         </div>
 
         {/* Image Section */}
-        <div
-          className="md:w-1/2 flex justify-center animate-slideInRight"
-          style={{
-            "--animation-duration": "1.2s",
-            "--animation-delay": "0.3s",
-          }}
-        >
+        <div className="md:ml-9">
           <img
             src={AboutImg}
             alt="About Globit Imports"
             className="w-full max-w-lg rounded-lg shadow-lg animate-scaleIn"
-            style={{
-              "--animation-duration": "1.5s",
-              "--animation-delay": "0.5s",
-            }}
           />
         </div>
       </div>

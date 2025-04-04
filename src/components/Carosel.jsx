@@ -30,8 +30,8 @@ function Carousel() {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      <AnimatePresence mode="popLayout">
+    <div className="relative w-full h-96 md:h-screen overflow-hidden">
+      <AnimatePresence mode="sync">
         <motion.div
           key={currentIndex}
           initial={{ opacity: 0, scale: 0.9 }}
@@ -45,7 +45,7 @@ function Carousel() {
             alt="Slide"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/20 flex items-center justify-center text-center p-6">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/20 flex items-center justify-center text-center p-2">
             <motion.h2
               className="text-white text-3xl md:text-5xl font-semibold lg:p-20 drop-shadow-lg"
               initial={{ opacity: 0, y: 30 }}
