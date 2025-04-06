@@ -3,7 +3,7 @@ import AboutImg from "../assets/business-team-working-laptop.jpg";
 
 const AboutUs = () => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-white py-16">
       <div className="container mx-auto px-6 lg:px-12 flex flex-col-reverse md:flex-row items-center">
         {/* Text Section */}
         <div

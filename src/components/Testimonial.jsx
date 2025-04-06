@@ -72,7 +72,7 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="m-auto py-5 px-2 bg-gradient-to-r from-blue-50 to-gray-100 w-full">
+    <section className="m-auto py-5 px-2 bg- white w-full">
       {/* Section Title */}
       <div className="text-center w-full lg:w-[50%] m-auto mb-12">
         <h2 className="text-3xl font-bold mb-4 text-gray-900">
@@ -90,7 +90,7 @@ const TestimonialSection = () => {
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="p-4">
-              <div className="bg-white shadow-xl   rounded-lg p-6 text-center transition-transform duration-300 hover:scale-105">
+              <div className="bg-gray-50 shadow-xl   rounded-lg p-6 text-center transition-transform duration-300 hover:scale-105">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}

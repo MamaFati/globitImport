@@ -39,7 +39,7 @@ function NavBar() {
     }`;
 
   return (
-    <nav className="bg-white shadow-lg fixed top-0 left-0 right-0 z-50 font-serif ">
+    <nav className="bg-gray-50 shadow-lg fixed top-0 left-0 right-0 z-50 font-serif ">
       <div className="max-w-screen-xl mx-auto flex items-center h-20 justify-between px-4  ">
         {/* Logo */}
         <NavLink to="/" className="flex items-center" onClick={closeMenu}>
