@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
-import AppLogo from "@/public/images/c864ab35-9084-4728-8e23-97d5d248e839.png";
+import AppLogo from "@/public/images/35ab6eb9-b8b6-42a9-806c-cdaac68ec55d-removebg-preview (1).png";
 import {
   Select,
   SelectContent,
@@ -39,10 +39,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full  bg-slate-900/40 text-white z-50">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-2 py-2">
+    <nav className="fixed w-full  bg-custom-navy text-white z-50">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-2">
         <Link href="/" onClick={closeMenu} className="flex items-center gap-2">
-          <Image src={AppLogo} className="" alt="Globit Logo" width={80} height={5} />
+          <Image
+            src={AppLogo}
+            className=""
+            alt="Globit Logo"
+            width={80}
+            height={5}
+          />
         </Link>
 
         <button
@@ -101,21 +107,29 @@ const Navbar = () => {
       </div>
 
       {isOpen ? (
-        <div className="border-t border-gray-200 bg-white md:hidden">
+        <div className=" bg-custom-navy text-white md:hidden">
           <ul className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4">
             <li>
-              <Link href="/" onClick={closeMenu} className="hover:text-gray-900">
+              <Link
+                href="/"
+                onClick={closeMenu}
+                className="hover:text-gray-900"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/about" onClick={closeMenu} className="hover:text-gray-900">
+              <Link
+                href="/about"
+                onClick={closeMenu}
+                className="hover:text-gray-900"
+              >
                 About
               </Link>
             </li>
             <li>
               <Select onValueChange={handleServiceChange}>
-                <SelectTrigger showValue={false}>
+                <SelectTrigger showValue={false} className="bg-custom-navy!">
                   <span className="">Services</span>
                   <SelectValue className="sr-only" placeholder="Services" />
                 </SelectTrigger>
@@ -131,12 +145,20 @@ const Navbar = () => {
               </Select>
             </li>
             <li>
-              <Link href="/blog" onClick={closeMenu} className="hover:text-gray-900">
+              <Link
+                href="/blog"
+                onClick={closeMenu}
+                className="hover:text-gray-900"
+              >
                 Blog
               </Link>
             </li>
             <li>
-              <Link href="/contact" onClick={closeMenu} className="hover:text-gray-900">
+              <Link
+                href="/contact"
+                onClick={closeMenu}
+                className="hover:text-gray-900"
+              >
                 Contact
               </Link>
             </li>

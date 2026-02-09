@@ -6,7 +6,7 @@ import { PiOptionFill } from "react-icons/pi";
 import { Button } from "../ui/button";
 const HeroPage = () => {
     return (
-      <section className="relative w-full min-h-screen overflow-hidden z-0">
+      <section className="relative w-full min-h-full overflow-hidden z-0">
         <div className="absolute inset-0 -z-10">
           <Image
             src={HeroImg}
@@ -22,39 +22,38 @@ const HeroPage = () => {
           <div className="absolute inset-0 bg-slate-900/50 " />
         </div>
 
-        <div className="container mx-auto px-6 lg:px-12 py-80 lg:py-50">
+        <div className="container mx-auto px-5 sm:px-6 lg:px-12 py-24 sm:py-32 lg:py-40">
           <div className="max-w-3xl text-white">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-semibold leading-tight">
               From China to Your Doorstep.{" "}
-              <span className="text-slate-900">Guaranteed.</span>
+              <span className="text-custom-navy">Guaranteed.</span>
             </h1>
-            <p className="mt-4 text-lg sm:text-base text-gray-200 max-w-lg">
+            <p className="mt-4 text-base sm:text-lg text-gray-200 max-w-lg">
               We simplify international sourcing from China. Whether you are a
               business scaling up or an individual shopping for quality, Globit
               Imports bridges the gap between China and you with transparency
               and speed.
             </p>
-            <div className="mt-6 flex gap-4">
-              <div>
-                <FaRegCheckCircle className="inline-flex text-green-600 mr-2" />{" "}
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
+              <div className="flex items-center">
+                <FaRegCheckCircle className="inline-flex text-custom-green mr-2" />{" "}
                 Verified Suppliers
               </div>
-              <div>
-                {" "}
-                <RiSecurePaymentLine className="inline-flex text-green-600  mr-2" />
+              <div className="flex items-center">
+                <RiSecurePaymentLine className="inline-flex text-custom-green  mr-2" />
                 Secure Payment
               </div>
-              <div>
-                <PiOptionFill className="inline-flex text-green-600  mr-2" />
+              <div className="flex items-center">
+                <PiOptionFill className="inline-flex text-custom-green  mr-2" />
                 Sea and Air Option
               </div>
             </div>
 
-            <div className="mt-6 flex gap-4">
-              <Button variant="secondary" className="px-6 py-2 rounded-md">
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:gap-4">
+              <Button variant="secondary" className="px-6 py-4 rounded-md">
                 View Open Preorders
               </Button>
-              <Button variant="secondary" className="px-6 py-2 rounded-md">
+              <Button variant="ghost" className="px-6 py-2 rounded-md">
                 Join the Import Masterclass
               </Button>
             </div>
