@@ -26,7 +26,7 @@ const HeroPage = () => {
           <div className="max-w-3xl text-white">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-semibold leading-tight">
               From China to Your Doorstep.{" "}
-              <span className="text-slate-900">Guaranteed.</span>
+              <span className="text-slate-900" style={{color:"#d5ad36"}}>Guaranteed.</span>
             </h1>
             <p className="mt-4 text-lg sm:text-base text-gray-200 max-w-lg">
               We simplify international sourcing from China. Whether you are a
@@ -35,18 +35,30 @@ const HeroPage = () => {
               and speed.
             </p>
             <div className="mt-6 flex gap-4">
-              <div>
-                <FaRegCheckCircle className="inline-flex text-green-600 mr-2" />{" "}
-                Verified Suppliers
+              <div className="flex ">
+                <div className="">
+                  <FaRegCheckCircle className="inline-flex text-green-600 mr-2" />{" "}
+                </div>
+                <div className="">
+                  Verified Suppliers
+                </div>
               </div>
-              <div>
+              <div className="flex">
                 {" "}
-                <RiSecurePaymentLine className="inline-flex text-green-600  mr-2" />
-                Secure Payment
+                <div>
+                  <RiSecurePaymentLine className="inline-flex text-green-600  mr-2" />
+                </div>
+                <div>
+                  Secure Payment
+                </div>
               </div>
-              <div>
-                <PiOptionFill className="inline-flex text-green-600  mr-2" />
-                Sea and Air Option
+              <div className="flex">
+                <div>
+                  <PiOptionFill className="inline-flex text-green-600  mr-2" />
+                </div>
+                <div>
+                  Sea and Air Option
+                </div>
               </div>
             </div>
 

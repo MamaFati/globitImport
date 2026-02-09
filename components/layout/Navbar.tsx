@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
-import AppLogo from "@/public/images/c864ab35-9084-4728-8e23-97d5d248e839.png";
+import AppLogo from "@/public/images/logo.png";
 import {
   Select,
   SelectContent,
@@ -39,7 +39,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full  bg-slate-900/40 text-white z-50">
+    <nav className="fixed w-full  bg-slate-900/30 text-white z-50">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-2 py-2">
         <Link href="/" onClick={closeMenu} className="flex items-center gap-2">
           <Image src={AppLogo} className="" alt="Globit Logo" width={80} height={5} />
@@ -101,7 +101,7 @@ const Navbar = () => {
       </div>
 
       {isOpen ? (
-        <div className="border-t border-gray-200 bg-white md:hidden">
+        <div className=" w-1/2 border-gray-200 bg-slate-900/30 text-white md:hidden fixed right-0">
           <ul className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4">
             <li>
               <Link href="/" onClick={closeMenu} className="hover:text-gray-900">
