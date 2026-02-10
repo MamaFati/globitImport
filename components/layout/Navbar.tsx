@@ -39,7 +39,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full  bg-custom-navy text-white z-50">
+    <nav className="fixed w-full  bg-slate-900/50 text-white z-50">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-2">
         <Link href="/" onClick={closeMenu} className="flex items-center gap-2">
           <Image
@@ -107,7 +107,7 @@ const Navbar = () => {
       </div>
 
       {isOpen ? (
-        <div className=" bg-custom-navy text-white md:hidden">
+        <div className=" bg-slate-900/50 text-white md:hidden">
           <ul className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4">
             <li>
               <Link
@@ -129,7 +129,7 @@ const Navbar = () => {
             </li>
             <li>
               <Select onValueChange={handleServiceChange}>
-                <SelectTrigger showValue={false} className="bg-custom-navy!">
+                <SelectTrigger showValue={false} className="bg-slate-900/50!">
                   <span className="">Services</span>
                   <SelectValue className="sr-only" placeholder="Services" />
                 </SelectTrigger>

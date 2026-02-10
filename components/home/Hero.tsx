@@ -26,7 +26,9 @@ const HeroPage = () => {
           <div className="max-w-3xl text-white">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-semibold leading-tight">
               From China to Your Doorstep.{" "}
-              <span className="text-custom-navy">Guaranteed.</span>
+              <span className="text-secondary">
+                Guaranteed.
+              </span>
             </h1>
             <p className="mt-4 text-base sm:text-lg text-gray-200 max-w-lg">
               We simplify international sourcing from China. Whether you are a
@@ -53,7 +55,7 @@ const HeroPage = () => {
               <Button variant="secondary" className="px-6 py-4 rounded-md">
                 View Open Preorders
               </Button>
-              <Button variant="ghost" className="px-6 py-2 rounded-md">
+              <Button variant="outline" className="px-6 py-2 rounded-md">
                 Join the Import Masterclass
               </Button>
             </div>

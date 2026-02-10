@@ -1,11 +1,11 @@
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import HeroPage from '@/components/home/Hero'
+import Index from '@/components/layout/Index';
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <HeroPage/>
+      <Index />
       <Footer />
     </div>
        );
