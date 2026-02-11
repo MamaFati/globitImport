@@ -4,11 +4,11 @@ import HowItWorks from "../home/HowItWorks";
 
 const MainPage = () => {
     return (
-      <>
+      <div className="bg-custom-background ">
         <HeroPage />
-        {/* <HowItWorks />
-        <AboutUs /> */}
-      </>
+        <HowItWorks />
+        <AboutUs />
+      </div>
     );
 }
  
