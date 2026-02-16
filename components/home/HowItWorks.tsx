@@ -1,5 +1,4 @@
 import { PackageCheck, Ship, Wallet } from "lucide-react";
-import { FiCheckSquare, FiGlobe, FiLock, FiShoppingCart, FiTruck } from "react-icons/fi";
 
 const HowItWorks = () => {
   return (
@@ -10,7 +9,7 @@ const HowItWorks = () => {
             <h2 className="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-3">
               How It Works
             </h2>
-            <h3 className="text-2xl md:text-4xl font-black text-slate-900 mb-6">
+            <h3 className="text-2xl md:text-4xl font-bold text-slate-900 mb-6">
               How Globit Makes Importing Simple &amp; Safe
             </h3>
             <p className="text-slate-600 max-w-2xl mx-auto text-lg">
