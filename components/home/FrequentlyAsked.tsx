@@ -146,6 +146,3 @@ const FrequentlyAskeQuestions = () => {
 }
  
 export default FrequentlyAskeQuestions;
-
-
- 

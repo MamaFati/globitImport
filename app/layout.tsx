@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 import { MessageCircle } from "lucide-react";
 import Link from "next/link";
@@ -29,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar />
         {children}
         {/* <Footer /> */}
         {/* Sticky WhatsApp Button */}
