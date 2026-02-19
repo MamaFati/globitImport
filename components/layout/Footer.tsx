@@ -1,28 +1,31 @@
 import Link from "next/link";
+import Image from "next/image";
+import AppLogo from "@/public/images/35ab6eb9-b8b6-42a9-806c-cdaac68ec55d-removebg-preview (1).png";
+import { primaryNavLinks, serviceLinks } from "@/components/layout/navigation";
 import {
   Facebook,
   Instagram,
   Mail,
   MapPin,
-  Package,
   Phone,
   Twitter,
 } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-950 text-slate-400 pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-slate-900 text-slate-400 pt-10 pb-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="bg-blue-600 p-2 rounded-lg">
-                <Package className="h-5 w-5 text-white" />
-              </div>
-              <span className="text-xl font-extrabold tracking-tight text-white">
-                GLOBIT <span className="text-blue-500">IMPORTS</span>
-              </span>
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                src={AppLogo}
+                className=""
+                alt="Globit Logo"
+                width={80}
+                height={5}
+              />
             </Link>
             <p className="text-slate-400 leading-relaxed">
               Ghana&apos;s premier China to Ghana shipping and sourcing partner.
@@ -30,24 +33,24 @@ const Footer = () => {
               and expert training.
             </p>
             <div className="flex space-x-4">
-              <a
+              <Link
                 href="#"
                 className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all"
               >
                 <Facebook className="h-5 w-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all"
               >
                 <Twitter className="h-5 w-5" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -55,34 +58,26 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-4">
-              <li>
-                <Link href="/" className="hover:text-blue-500 transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/aboutUs"
-                  className="hover:text-blue-500 transition-colors"
-                >
-                  About Globit Story
-                </Link>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
-                  Open Preorders
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
-                  Import Masterclass
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
-                  Student Portal
-                </a>
-              </li>
+              {primaryNavLinks.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-blue-500 transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+              {serviceLinks.map((item) => (
+                <li key={item.value}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-blue-500 transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -96,7 +91,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-blue-500 shrink-0" />
-                <span>+233 (0) XX XXX XXXX</span>
+                <span>+233-5511-93503</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-blue-500 shrink-0" />
@@ -131,7 +126,10 @@ const Footer = () => {
         </div>
 
         <div className="pt-10 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <p>&copy; {new Date().getFullYear()} Globit Imports. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Globit Imports. All rights
+            reserved.
+          </p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">
               Privacy Policy

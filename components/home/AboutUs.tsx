@@ -6,7 +6,7 @@ import Link from 'next/link';
 const AboutUs = () => {
   return (
     <section className=" py-20 sm:py-24 md:py-10">
-      <h1 className="mb-4 text-center text-sm font-semibold uppercase tracking-[0.2em] text-secondary">
+      <h1 className="mb-4 text-center text-sm font-semibold uppercase tracking-[0.2em] text-blue-600 ">
         About Globit Imports
       </h1>
       <div className="mx-auto flex w-full max-w-6xl flex-col-reverse items-center gap-12 px-6 md:flex-row md:gap-16">

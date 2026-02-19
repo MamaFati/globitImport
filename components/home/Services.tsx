@@ -55,7 +55,7 @@ const ServicesComponent = () => {
   ];
 
   return (
-    <section className="py-32 bg-slate-50 relative">
+    <section className="py-24 bg-slate-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-15 animate-reveal">
           <h2 className="text-blue-600 font-bold uppercase tracking-[0.3em] text-sm mb-2">
@@ -65,7 +65,7 @@ const ServicesComponent = () => {
             Your End-to-End{" "}
             <span className="text-secondary">Import Solution</span>
           </h3>
-          <div className="w-24 h-1.5 bg-se mx-auto mt-4 bg-secondary rounded-full"></div>
+          <div className="w-24 h-1.5  mx-auto mt-4 bg-secondary rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">

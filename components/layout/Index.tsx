@@ -4,6 +4,9 @@ import HowItWorks from "../home/HowItWorks";
 import ServicesComponent from "../home/Services";
 import WhyChooseUs from "../home/WhyChooseUs";
 import FrequentlyAsked from '../home/FrequentlyAsked'
+import TestimonialSection from "../home/Testimonial";
+import TrustedPartners from "@/components/home/TrustedPartners";
+import BlogSection from "../home/Blogs";
 
 const MainPage = () => {
     return (
@@ -13,6 +16,9 @@ const MainPage = () => {
         <AboutUs />
         <HowItWorks />
         <WhyChooseUs />
+        <TrustedPartners />
+        <TestimonialSection />
+        <BlogSection />
         <FrequentlyAsked />
 
       </div>

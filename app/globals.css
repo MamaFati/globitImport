@@ -3,6 +3,23 @@
 
 @custom-variant dark (&:is(.dark *));
 
+  body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-reveal {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
 
 @theme  {
     --color-custom-navy: #010079;
@@ -155,6 +172,18 @@
     animation: bg-pan 18s ease-in-out infinite alternate;
   }
 
+  .animate-testimonials-scroll-right {
+    --testimonials-scroll-duration: 45s;
+    animation: testimonials-scroll-right var(--testimonials-scroll-duration) linear infinite;
+    will-change: transform;
+  }
+
+  @media (max-width: 640px) {
+    .animate-testimonials-scroll-right {
+      --testimonials-scroll-duration: 70s;
+    }
+  }
+
   .hover-lift {
     transition: transform 280ms ease, box-shadow 280ms ease;
   }
@@ -200,6 +229,15 @@
     }
     100% {
       background-position: 100% 50%;
+    }
+  }
+
+  @keyframes testimonials-scroll-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 
@@ -298,6 +336,7 @@
     .animate-fade-in,
     .animate-soft-float,
     .animate-bg-pan,
+    .animate-testimonials-scroll-right,
     .hero-bg-animate,
     .starfield::before,
     .starfield::after,

@@ -6,12 +6,14 @@ const HowItWorks = () => {
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-3">
+            <h2 className="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-2">
               How It Works
             </h2>
-            <h3 className="text-2xl md:text-4xl font-bold text-slate-900 mb-6">
-              How Globit Makes Importing Simple &amp; Safe
+            <h3 className="text-2xl md:text-4xl font-bold text-slate-900">
+              How Globit Makes Importing <span className="text-secondary">Simple &amp; Safe</span> 
             </h3>
+          {/* <div className="w-24 h-1.5  mx-auto mt-4 bg-secondary rounded-full"></div> */}
+
             <p className="text-slate-600 max-w-2xl mx-auto text-lg">
               Our streamlined 3-step process takes the headache out of
               international commerce.

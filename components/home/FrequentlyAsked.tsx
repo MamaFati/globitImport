@@ -76,7 +76,7 @@ const FrequentlyAskeQuestions = () => {
     //  );
 
     return (
-      <section className="py-32 bg-white">
+      <section className="py-24 bg-slate-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 animate-reveal">
             <h2 className="text-blue-600 font-bold uppercase tracking-[0.3em] text-sm mb-2">
