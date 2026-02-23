@@ -1,14 +1,18 @@
+import rmbExchangeImage from '@/public/images/rmbExchangeImage.jpeg'
+import airAndSeaImage from '@/public/images/about-Image.jpg'
+import commonMistakesImage from '@/public/images/commonMistakesImage.jpeg'
+import { StaticImageData } from 'next/image';
 export type BlogPost = {
-  slug: string
-  title: string
-  excerpt: string
-  image: string
-  date: string
-  readTime: string
-  category: string
-  featured?: boolean
-  content: string[]
-}
+  slug: string;
+  title: string;
+  excerpt: string;
+  image: string | StaticImageData;
+  date: string;
+  readTime: string;
+  category: string;
+  featured?: boolean;
+  content: string[];
+};
 
 export const blogPosts: BlogPost[] = [
   {
@@ -16,8 +20,7 @@ export const blogPosts: BlogPost[] = [
     title: "5 Common Mistakes When Sourcing from 1688",
     excerpt:
       "Many Ghanaian importers lose money due to avoidable mistakes. Learn how to protect your capital and negotiate better prices with vendors.",
-    image:
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200",
+    image: commonMistakesImage,
     date: "Oct 24, 2024",
     readTime: "6 min read",
     category: "Sourcing",
@@ -35,9 +38,8 @@ export const blogPosts: BlogPost[] = [
     title: "Understanding RMB Exchange Rates for 2024",
     excerpt:
       "Fluctuating rates can kill your margins. Here is a practical framework for timing supplier payments and keeping currency risk under control.",
-    image:
-      "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&q=80&w=800",
-    date: "Oct 20, 2024",
+    image: rmbExchangeImage,
+    date: "Feb 20, 2025",
     readTime: "4 min read",
     category: "Payments",
     content: [
@@ -53,8 +55,7 @@ export const blogPosts: BlogPost[] = [
     title: "Air vs Sea Freight: Which is Better for Your Business?",
     excerpt:
       "Break down the cost and timing tradeoffs for bulk restocks, urgent shipments, and seasonal inventory planning.",
-    image:
-      "https://images.unsplash.com/photo-1740914994657-f1cdffdc418e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: airAndSeaImage,
     date: "Oct 15, 2024",
     readTime: "8 min read",
     category: "Logistics",

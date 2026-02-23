@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import procurementImage from "@/public/images/procurement.jpg"
+import procurementImage from "@/public/images/pocurementImage.jpeg"
 import logisticImage from "@/public/images/logistic.jpg"
 import onlineShop from "@/public/images/online_shopping_03.jpg"
-import productSourcing from "@/public/images/productSourcing.avif";
-import rmbExchange from "@/public/images/rmb-exchange.avif";
+import productSourcing from "@/public/images/productSourcingImage.jpeg";
+import rmbExchange from "@/public/images/rmbExchangeImage.jpeg";
 import masterClass from "@/public/images/masterClass.avif";
 import { ArrowRight, BookOpen, PackageCheck, RefreshCcw, Search, ShoppingBag, Truck } from "lucide-react";
 
