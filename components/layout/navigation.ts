@@ -1,3 +1,5 @@
+import { serviceLinks as servicePageLinks } from "@/lib/services";
+
 export type NavLink = {
   label: string;
   href: string;
@@ -11,36 +13,9 @@ export type ServiceLink = {
 
 export const primaryNavLinks: NavLink[] = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  { label: "About", href: "/aboutUs" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 
-export const serviceLinks: ServiceLink[] = [
-  {
-    value: "product-sourcing",
-    label: "Product Sourcing",
-    href: "/services/product-sourcing",
-  },
-  {
-    value: "seamless-procurement",
-    label: "Seamless Procurement",
-    href: "/services/seamless-procurement",
-  },
-  {
-    value: "rmb-exchange",
-    label: "RMB Exchange",
-    href: "/services/rmb-exchange",
-  },
-  {
-    value: "global-logistics",
-    label: "Global Logistics & Shipping",
-    href: "/services/global-logistics",
-  },
-  { value: "courses", label: "Courses", href: "/services/courses" },
-  {
-    value: "globit-shop",
-    label: "Globit Shop",
-    href: "/services/globit-shop",
-  },
-];
+export const serviceLinks: ServiceLink[] = servicePageLinks;

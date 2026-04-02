@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
   body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', system-ui, -apple-system,  Poppins, 'Segoe UI', Roboto, Oxygen, Ubuntu, Lato, 'Open Sans', 'Helvetica Neue', sans-serif;
             scroll-behavior: smooth;
         }
         @keyframes fadeInUp {

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
@@ -19,6 +19,9 @@ import { primaryNavLinks, serviceLinks } from "@/components/layout/navigation";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
+
+  const isActiveLink = (href: string) => pathname === href;
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
@@ -60,7 +63,10 @@ const Navbar = () => {
         <ul className="hidden items-center gap-6 md:flex">
           {primaryNavLinks.slice(0, 2).map((item) => (
             <li key={item.href}>
-              <Link href={item.href} className="hover:text-gray-900">
+              <Link
+                href={item.href}
+                className={`${isActiveLink(item.href) ? "text-blue-500" : "text-white"} hover:text-blue-500 transition-colors`}
+              >
                 {item.label}
               </Link>
             </li>
@@ -84,7 +90,10 @@ const Navbar = () => {
           </li>
           {primaryNavLinks.slice(2).map((item) => (
             <li key={item.href}>
-              <Link href={item.href} className="hover:text-gray-900">
+              <Link
+                href={item.href}
+                className={`${isActiveLink(item.href) ? "text-blue-500" : "text-white"} hover:text-blue-500 transition-colors`}
+              >
                 {item.label}
               </Link>
             </li>
@@ -100,7 +109,7 @@ const Navbar = () => {
                 <Link
                   href={item.href}
                   onClick={closeMenu}
-                  className="hover:text-gray-900"
+                  className={`${isActiveLink(item.href) ? "text-blue-500" : "text-white"} hover:text-blue-500 transition-colors`}
                 >
                   {item.label}
                 </Link>
@@ -128,7 +137,7 @@ const Navbar = () => {
                 <Link
                   href={item.href}
                   onClick={closeMenu}
-                  className="hover:text-gray-900"
+                  className={`${isActiveLink(item.href) ? "text-blue-500" : "text-white"} hover:text-blue-500 transition-colors`}
                 >
                   {item.label}
                 </Link>
