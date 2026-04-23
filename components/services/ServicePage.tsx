@@ -34,7 +34,7 @@ const SectionHeading = ({
     </p>
     <h2
       className={cn(
-        "mt-3 text-3xl font-black md:text-4xl",
+        "mt-3 text-[25] font-bold md:text-2xl",
         dark ? "text-white" : "text-slate-950"
       )}
     >
@@ -62,10 +62,10 @@ const InfoCard = ({
 }) => (
   <div
     className={cn(
-      "rounded-[1.75rem] border p-6 shadow-[0_24px_80px_-40px_rgba(15,23,42,0.35)]",
+      "rounded-[1.75rem] border p-6 shadow-md",
       dark
         ? "border-white/10 bg-white/5"
-        : "border-slate-200 bg-white shadow-[0_24px_80px_-45px_rgba(15,23,42,0.35)]"
+        : "border-slate-200 bg-white shadow-md  "
     )}
   >
     {card.badge ? (
@@ -81,7 +81,7 @@ const InfoCard = ({
     <h3
       className={cn(
         "mt-3 text-xl font-bold",
-        dark ? "text-white" : "text-slate-950"
+        dark ? "text-white" : "text-bold"
       )}
     >
       {card.title}
@@ -99,26 +99,26 @@ const InfoCard = ({
 
 export const ServicePage = ({ service }: ServicePageProps) => {
   return (
-    <div className="bg-white">
+    <div className="bg-white ">
       <section className="relative overflow-hidden bg-slate-950 pb-20 pt-32 text-white">
         <div className="absolute inset-0">
           <Image
             src={service.image}
             alt={service.label}
             fill
-            className="object-cover opacity-20"
+            className="scale-105 object-cover  animate-soft-float opacity-20"
             sizes="100vw"
             priority
           />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(213,173,54,0.32),transparent_32%),linear-gradient(135deg,rgba(2,6,23,0.96),rgba(15,23,42,0.84),rgba(1,0,121,0.65))]" />
+          {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(213,173,54,0.32),transparent_32%),linear-gradient(135deg,rgba(2,6,23,0.96),rgba(15,23,42,0.84),rgba(1,0,121,0.65))]" /> */}
         </div>
 
         <div className="relative mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.3em] text-blue-100">
+            {/* <span className="inline-flex items-center rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.3em] text-blue-100">
               {service.heroEyebrow}
-            </span>
-            <h1 className="mt-6 text-4xl font-black leading-tight md:text-6xl">
+            </span> */}
+            <h1 className="mt-6 text-4xl font-bold leading-tight md:text-4xl">
               {service.heroTitle}
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-200 md:text-xl">
@@ -143,7 +143,7 @@ export const ServicePage = ({ service }: ServicePageProps) => {
             </div>
           </div>
 
-          <div className="self-end">
+          <div className="self-end hidden">
             <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 backdrop-blur-sm">
               <div className="flex items-center gap-4">
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-slate-950">
@@ -177,15 +177,15 @@ export const ServicePage = ({ service }: ServicePageProps) => {
         </div>
       </section>
 
-      {service.calculator ? (
+      {/* {service.calculator ? (
         <section className="mx-auto -mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
           <ExchangeCalculator calculator={service.calculator} />
         </section>
-      ) : null}
+      ) : null} */}
 
       {service.problemTitle || service.solutionTitle ? (
-        <section className="py-20 sm:py-24">
-          <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
+        <section className="py-5 sm:py-10">
+          <div className="mx-auto grid max-w-7xl gap-12 px-4 text-lg sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
             <div>
               {service.problemTitle ? (
                 <>
@@ -206,14 +206,14 @@ export const ServicePage = ({ service }: ServicePageProps) => {
             </div>
 
             {service.solutionTitle ? (
-              <div className="rounded-[2rem] bg-slate-50 p-8 md:p-10">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600 text-white">
+              <div className="rounded-[2rem] bg-slate-50 leading-relaxed shadow-md p-8 md:p-10">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-white">
                   <ShieldCheck className="h-7 w-7" />
                 </div>
                 <p className="mt-6 text-sm font-bold uppercase tracking-[0.3em] text-blue-600">
                   Our answer
                 </p>
-                <h2 className="mt-3 text-3xl font-black text-slate-950">
+                <h2 className="mt-3 text-2xl font-bold text-justify text-slate-950">
                   {service.solutionTitle}
                 </h2>
                 <p className="mt-5 text-lg leading-relaxed text-slate-600">
@@ -254,8 +254,8 @@ export const ServicePage = ({ service }: ServicePageProps) => {
       {service.workflowSteps ? (
         <section
           className={cn(
-            "py-20 sm:py-24",
-            service.workflowTone === "dark" ? "bg-slate-950" : "bg-white"
+            "py-5 sm:py-10 ",
+            service.workflowTone === "dark" ? "bg-slate-950" : "bg-white",
           )}
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -265,7 +265,7 @@ export const ServicePage = ({ service }: ServicePageProps) => {
               description={service.workflowDescription}
               dark={service.workflowTone === "dark"}
             />
-            <div className="mt-12 grid gap-6 lg:grid-cols-4">
+            <div className="mt-12 grid gap-6 lg:grid-cols-3">
               {service.workflowSteps.map((step, index) => (
                 <div
                   key={step.title}
@@ -273,15 +273,15 @@ export const ServicePage = ({ service }: ServicePageProps) => {
                     "rounded-[1.75rem] border p-6",
                     service.workflowTone === "dark"
                       ? "border-white/10 bg-white/5 text-white"
-                      : "border-slate-200 bg-slate-50"
+                      : "border-slate-200 bg-slate-50",
                   )}
                 >
                   <div
                     className={cn(
-                      "flex h-12 w-12 items-center justify-center rounded-2xl text-lg font-black",
+                      "flex h-12 w-12 items-center justify-center rounded-2xl text-lg font-bold",
                       service.workflowTone === "dark"
                         ? "bg-secondary text-slate-950"
-                        : "bg-blue-600 text-white"
+                        : "bg-secondary/50 text-white",
                     )}
                   >
                     {index + 1}
@@ -291,7 +291,7 @@ export const ServicePage = ({ service }: ServicePageProps) => {
                       "mt-5 text-xl font-bold",
                       service.workflowTone === "dark"
                         ? "text-white"
-                        : "text-slate-950"
+                        : "text-slate-950",
                     )}
                   >
                     {step.title}
@@ -301,7 +301,7 @@ export const ServicePage = ({ service }: ServicePageProps) => {
                       "mt-3 leading-relaxed",
                       service.workflowTone === "dark"
                         ? "text-slate-300"
-                        : "text-slate-600"
+                        : "text-slate-600",
                     )}
                   >
                     {step.description}
@@ -314,14 +314,14 @@ export const ServicePage = ({ service }: ServicePageProps) => {
       ) : null}
 
       {service.featureCards ? (
-        <section className="py-20 sm:py-24">
+        <section className="py-5 sm:py-10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Highlights"
               title={service.featureTitle ?? "Key features"}
               description={service.featureDescription}
             />
-            <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {service.featureCards.map((card) => (
                 <InfoCard key={card.title} card={card} />
               ))}
@@ -385,7 +385,7 @@ export const ServicePage = ({ service }: ServicePageProps) => {
       ) : null}
 
       {service.galleryCards ? (
-        <section className="py-20 sm:py-24">
+        <section className="py-5 sm:py-10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Showcase"
@@ -423,7 +423,7 @@ export const ServicePage = ({ service }: ServicePageProps) => {
       ) : null}
 
       {service.notice ? (
-        <section className="py-6 sm:py-8">
+        <section className="py-5 sm:py-10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="rounded-[1.8rem] border border-blue-200 bg-blue-50 px-6 py-6 md:px-8">
               <p className="text-sm font-bold uppercase tracking-[0.3em] text-blue-700">
@@ -438,13 +438,13 @@ export const ServicePage = ({ service }: ServicePageProps) => {
       ) : null}
 
       {service.testimonial ? (
-        <section className="py-20 sm:py-24">
+        <section className="py-5 sm:py-10">
           <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
-            <div className="rounded-[2.2rem] bg-slate-50 px-6 py-10 md:px-12 md:py-14">
+            <div className="rounded-[2.2rem] bg-slate-50 px-6 py-10 md:px-12 md:py-14 shadow-md">
               <p className="text-sm font-bold uppercase tracking-[0.3em] text-blue-600">
                 Student proof
               </p>
-              <blockquote className="mt-5 text-2xl font-black leading-tight text-slate-950 md:text-4xl">
+              <blockquote className="mt-5 text-lg font-bold leading-tight text-black md:text-2xl">
                 &ldquo;{service.testimonial.quote}&rdquo;
               </blockquote>
               <p className="mt-6 text-base font-semibold text-slate-500">

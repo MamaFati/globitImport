@@ -179,27 +179,27 @@ export const servicePages: ServicePageData[] = [
           "You receive a sourcing report with landed-cost estimates so profit is visible before you pay for stock.",
       },
     ],
-    workflowTone: "dark",
-    feeTitle: "Serious sourcing for serious businesses",
-    feeDescription:
-      "To reserve expert time for genuine importers, custom sourcing requests carry a small commitment fee that becomes an advantage if you proceed.",
-    feeCards: [
-      {
-        title: "$20 or 200 GHS commitment fee",
-        description:
-          "This covers factory outreach, negotiation time, and supplier document checks.",
-      },
-      {
-        title: "Built for qualified requests",
-        description:
-          "The structure filters casual browsing and lets us focus on commercial sourcing work.",
-      },
-      {
-        title: "Fully credited later",
-        description:
-          "If you move forward with procurement, the full amount is credited toward your procurement service fee.",
-      },
-    ],
+    // workflowTone: "dark",
+    // feeTitle: "Serious sourcing for serious businesses",
+    // feeDescription:
+    //   "To reserve expert time for genuine importers, custom sourcing requests carry a small commitment fee that becomes an advantage if you proceed.",
+    // feeCards: [
+    //   {
+    //     title: "$20 or 200 GHS commitment fee",
+    //     description:
+    //       "This covers factory outreach, negotiation time, and supplier document checks.",
+    //   },
+    //   {
+    //     title: "Built for qualified requests",
+    //     description:
+    //       "The structure filters casual browsing and lets us focus on commercial sourcing work.",
+    //   },
+    //   {
+    //     title: "Fully credited later",
+    //     description:
+    //       "If you move forward with procurement, the full amount is credited toward your procurement service fee.",
+    //   },
+    // ],
     ctaTitle: 'Ready to find your next "hero product"?',
     ctaDescription:
       "Stop guessing and start sourcing with precision. Join the retailers in Kumasi and Accra who use Globit to source smarter and protect margin.",
@@ -358,21 +358,21 @@ export const servicePages: ServicePageData[] = [
       { value: "0", label: "hidden fee claims in our promise" },
       { value: "50,000+ GHS", label: "bulk volume for VIP corporate rate" },
     ],
-    calculator: {
-      heading: "Indicative exchange calculator",
-      note:
-        "Illustrative estimate based on the service brief. Final rates are confirmed before settlement and may change during the day.",
-      fromLabel: "GHS",
-      fromValue: 1000,
-      toLabel: "RMB",
-      rate: 1.56,
-      button: {
-        href: "https://buy-rmb.com/",
-        label: "Lock this rate and pay now",
-        external: true,
-        variant: "primary",
-      },
-    },
+    // calculator: {
+    //   heading: "Indicative exchange calculator",
+    //   note:
+    //     "Illustrative estimate based on the service brief. Final rates are confirmed before settlement and may change during the day.",
+    //   fromLabel: "GHS",
+    //   fromValue: 1000,
+    //   toLabel: "RMB",
+    //   rate: 1.56,
+    //   button: {
+    //     href: "https://buy-rmb.com/",
+    //     label: "Lock this rate and pay now",
+    //     external: true,
+    //     variant: "primary",
+    //   },
+    // },
     featureTitle: "Why use Globit for exchange?",
     featureCards: [
       {
