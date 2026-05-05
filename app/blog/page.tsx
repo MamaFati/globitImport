@@ -74,10 +74,10 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-slate-50 pb-16">
-      <section className="relative overflow-hidden border-b bg-slate-950 px-4 py-20 text-white">
+      <section className="relative overflow-hidden border-b bg-slate-950 px-4 py-40 text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.2),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(213,173,54,0.28),transparent_35%)]" />
         <div className="relative mx-auto max-w-6xl">
-          <Badge variant="secondary" className="mb-4">
+          <Badge variant="secondary" className="mb-4 px-2 py-2 text-sm font-medium ">
             The Import Journal
           </Badge>
           <h1 className="max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl">

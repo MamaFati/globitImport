@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Many Ghanaian importers lose money due to avoidable mistakes. Learn how to protect your capital and negotiate better prices with vendors.",
     image: commonMistakesImage,
-    date: "Oct 24, 2024",
+    date: "Apr 28, 2026",
     readTime: "6 min read",
     category: "Sourcing",
     featured: true,
@@ -39,7 +39,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Fluctuating rates can kill your margins. Here is a practical framework for timing supplier payments and keeping currency risk under control.",
     image: rmbExchangeImage,
-    date: "Feb 20, 2025",
+    date: "Apr 15, 2026",
     readTime: "4 min read",
     category: "Payments",
     content: [
@@ -56,7 +56,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Break down the cost and timing tradeoffs for bulk restocks, urgent shipments, and seasonal inventory planning.",
     image: airAndSeaImage,
-    date: "Oct 15, 2024",
+    date: "Apr 01, 2026",
     readTime: "8 min read",
     category: "Logistics",
     content: [
@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
       "How top students scaled from test orders to full containers in 12 months with better sourcing and tighter operations.",
     image:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
-    date: "Oct 10, 2024",
+    date: "Mar 25, 2026",
     readTime: "12 min read",
     category: "Masterclass",
     content: [
@@ -92,7 +92,7 @@ export const blogPosts: BlogPost[] = [
       "A quick summary of recent clearing rule changes and what importers should update in their shipping workflow.",
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
-    date: "Oct 05, 2024",
+    date: "Mar 10, 2026",
     readTime: "5 min read",
     category: "Market News",
     content: [
@@ -110,7 +110,7 @@ export const blogPosts: BlogPost[] = [
       "Factory checks, business license reviews, and quality control checkpoints you should complete before paying.",
     image:
       "https://images.unsplash.com/photo-1590497008432-598f04441de8?q=80&w=1391&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    date: "Oct 01, 2024",
+    date: "Feb 28, 2026",
     readTime: "10 min read",
     category: "Sourcing",
     content: [
@@ -128,7 +128,7 @@ export const blogPosts: BlogPost[] = [
       "Use structured supplier messaging to reduce misunderstandings, speed up sampling, and keep production timelines predictable.",
     image:
       "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=900",
-    date: "Sep 28, 2024",
+    date: "Feb 15, 2026",
     readTime: "7 min read",
     category: "Sourcing",
     content: [
@@ -146,7 +146,7 @@ export const blogPosts: BlogPost[] = [
       "Consolidating multiple supplier orders into one shipment can improve freight efficiency and simplify your clearing process.",
     image:
       "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=900",
-    date: "Sep 24, 2024",
+    date: "Feb 01, 2026",
     readTime: "6 min read",
     category: "Logistics",
     content: [
@@ -164,7 +164,7 @@ export const blogPosts: BlogPost[] = [
       "A practical checklist to reduce fraud and payment errors when moving funds to overseas suppliers.",
     image:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=900",
-    date: "Sep 18, 2024",
+    date: "Jan 20, 2026",
     readTime: "5 min read",
     category: "Payments",
     content: [
@@ -182,7 +182,7 @@ export const blogPosts: BlogPost[] = [
       "Choose products with better demand stability and less cash-flow pressure using a simple validation framework.",
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=900",
-    date: "Sep 12, 2024",
+    date: "Jan 10, 2026",
     readTime: "9 min read",
     category: "Masterclass",
     content: [
@@ -200,7 +200,7 @@ export const blogPosts: BlogPost[] = [
       "Learn how to plan around seasonal congestion windows to avoid stockouts and sudden freight spikes.",
     image:
       "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=900",
-    date: "Sep 08, 2024",
+    date: "Dec 28, 2025",
     readTime: "6 min read",
     category: "Market News",
     content: [
@@ -218,7 +218,7 @@ export const blogPosts: BlogPost[] = [
       "Use this checklist to prepare shipping and customs documents before cargo arrives in Ghana.",
     image:
       "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=900",
-    date: "Sep 03, 2024",
+    date: "Dec 15, 2025",
     readTime: "7 min read",
     category: "Logistics",
     content: [

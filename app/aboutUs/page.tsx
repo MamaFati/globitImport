@@ -81,8 +81,8 @@ const About: React.FC = () => {
                   complexities of Chinese suppliers and the unpredictability of
                   port clearings. We learned the hard way so that you don&apos;t
                   have to. What began as a small operation in Kumasi has grown
-                  into a trusted sourcing partner for hundreds of retailers and
-                  individuals.
+                  into a trusted sourcing partner for hundreds of Wholesalers,
+                  retailers and individuals.
                 </p>
                 <p>
                   At Globit, we don&apos;t just move boxes; we build businesses.
@@ -98,7 +98,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Why Choose Us */}
-     <WhyChooseUs />
+      <WhyChooseUs />
     </div>
   );
 };

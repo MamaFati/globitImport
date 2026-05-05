@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GlobitImpot",
+  title: "GlobitImports",
   description: "Import business in Kumasi China to Ghana shipping",
 };
 

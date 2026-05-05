@@ -112,7 +112,7 @@ export const servicePages: ServicePageData[] = [
     heroActions: [
       {
         href: whatsappLink(
-          "Hello Globit, I want to start a product sourcing request."
+          "Hello Globit, I want to start a product sourcing request.",
         ),
         label: "Start sourcing request",
         external: true,
@@ -124,7 +124,11 @@ export const servicePages: ServicePageData[] = [
         variant: "secondary",
       },
     ],
-    tags: ["Factory shortlist", "Supplier verification", "Landed-cost planning"],
+    tags: [
+      "Factory shortlist",
+      "Supplier verification",
+      "Landed-cost planning",
+    ],
     metrics: [
       { value: "3-5", label: "top manufacturers shortlisted" },
       { value: "20-30%", label: "potential margin protected from middlemen" },
@@ -206,7 +210,7 @@ export const servicePages: ServicePageData[] = [
     ctaActions: [
       {
         href: whatsappLink(
-          "Hello Globit, I want to begin a sourcing request and pay the commitment fee."
+          "Hello Globit, I want to begin a sourcing request and pay the commitment fee.",
         ),
         label: "Start sourcing request",
         external: true,
@@ -227,7 +231,7 @@ export const servicePages: ServicePageData[] = [
     heroActions: [
       {
         href: whatsappLink(
-          "Hello Globit, I want to start a procurement request."
+          "Hello Globit, I want to start a procurement request.",
         ),
         label: "Start procurement request",
         external: true,
@@ -248,7 +252,7 @@ export const servicePages: ServicePageData[] = [
     introEyebrow: "The procurement gap",
     problemTitle: "What happens when procurement goes wrong?",
     problemIntro:
-      'Many importers get trapped inside the gap between paying a supplier in China and receiving the right goods in Ghana. That gap is where capital gets exposed.',
+      "Many importers get trapped inside the gap between paying a supplier in China and receiving the right goods in Ghana. That gap is where capital gets exposed.",
     painPoints: [
       {
         title: "The payment gap",
@@ -258,7 +262,7 @@ export const servicePages: ServicePageData[] = [
       {
         title: "The quality gap",
         description:
-          'You pay for Grade A goods and receive Grade B results because nobody checked at the warehouse.',
+          "You pay for Grade A goods and receive Grade B results because nobody checked at the warehouse.",
       },
       {
         title: "The communication gap",
@@ -318,7 +322,7 @@ export const servicePages: ServicePageData[] = [
     ctaActions: [
       {
         href: whatsappLink(
-          "Hello Globit, I need procurement support for an order."
+          "Hello Globit, I need procurement support for an order.",
         ),
         label: "Chat on WhatsApp",
         external: true,
@@ -339,14 +343,14 @@ export const servicePages: ServicePageData[] = [
     heroActions: [
       {
         href: whatsappLink(
-          "Hello Globit, I need today's RMB exchange rate for a supplier payment."
+          "Hello Globit, I need today's RMB exchange rate for a supplier payment.",
         ),
         label: "Get today's rate",
         external: true,
         variant: "primary",
       },
       {
-        href: "https://buy-rmb.com/",
+        href: "/services/rmb-exchange",
         label: "Go to payment portal",
         external: true,
         variant: "outline",
@@ -427,7 +431,7 @@ export const servicePages: ServicePageData[] = [
     ctaActions: [
       {
         href: whatsappLink(
-          "Hello Globit, I want to check the current RMB exchange rate."
+          "Hello Globit, I want to check the current RMB exchange rate.",
         ),
         label: "Check rate on WhatsApp",
         external: true,
@@ -454,7 +458,7 @@ export const servicePages: ServicePageData[] = [
     heroActions: [
       {
         href: whatsappLink(
-          "Hello Globit, I need the China warehouse address and current shipping rates."
+          "Hello Globit, I need the China warehouse address and current shipping rates.",
         ),
         label: "Get address and rates",
         external: true,
@@ -554,7 +558,7 @@ export const servicePages: ServicePageData[] = [
     ctaActions: [
       {
         href: whatsappLink(
-          "Hello Globit, I need logistics support for goods already in China."
+          "Hello Globit, I need logistics support for goods already in China.",
         ),
         label: "Chat with the logistics team",
         external: true,
@@ -618,7 +622,7 @@ export const servicePages: ServicePageData[] = [
       {
         title: "The sourcing secret",
         description:
-          'How to find factories and suppliers that never show up in a simple search.',
+          "How to find factories and suppliers that never show up in a simple search.",
       },
       {
         title: "The profit math",
@@ -719,7 +723,7 @@ export const servicePages: ServicePageData[] = [
       },
       {
         href: whatsappLink(
-          "Hello Globit, I want updates on upcoming preorder drops."
+          "Hello Globit, I want updates on upcoming preorder drops.",
         ),
         label: "Ask about preorders",
         external: true,
@@ -780,7 +784,7 @@ export const servicePages: ServicePageData[] = [
       {
         title: "No hidden fees",
         description:
-          'The price shown is intended to be the price paid, with no surprise clearing add-ons unless clearly stated.',
+          "The price shown is intended to be the price paid, with no surprise clearing add-ons unless clearly stated.",
       },
       {
         title: "Quality guaranteed",

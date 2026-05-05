@@ -1,5 +1,12 @@
-import { CheckCircle2, ShieldCheck, Sparkles } from "lucide-react";
+'use client';
+
+import { CheckCircle2, ShieldCheck, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import type { ServiceCard, ServicePageData } from "@/lib/services";
 import { cn } from "@/lib/utils";
@@ -265,49 +272,107 @@ export const ServicePage = ({ service }: ServicePageProps) => {
               description={service.workflowDescription}
               dark={service.workflowTone === "dark"}
             />
-            <div className="mt-12 grid gap-6 lg:grid-cols-3">
-              {service.workflowSteps.map((step, index) => (
-                <div
-                  key={step.title}
+            <div className="mt-12 relative">
+              <Swiper
+                modules={[Navigation, Pagination]}
+                navigation={{
+                  prevEl: ".workflow-prev",
+                  nextEl: ".workflow-next",
+                }}
+                pagination={{
+                  el: ".workflow-pagination",
+                  clickable: true,
+                  dynamicBullets: true,
+                }}
+                spaceBetween={24}
+                slidesPerView={1}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 2,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                  },
+                }}
+                className="workflow-swiper"
+              >
+                {service.workflowSteps.map((step, index) => (
+                  <SwiperSlide key={step.title}>
+                    <div
+                      className={cn(
+                        "rounded-[1.75rem] border p-6 h-full",
+                        service.workflowTone === "dark"
+                          ? "border-white/10 bg-white/5 text-white"
+                          : "border-slate-200 bg-slate-50",
+                      )}
+                    >
+                      <div
+                        className={cn(
+                          "flex h-12 w-12 items-center justify-center rounded-2xl text-lg font-bold",
+                          service.workflowTone === "dark"
+                            ? "bg-secondary text-slate-950"
+                            : "bg-secondary/50 text-white",
+                        )}
+                      >
+                        {index + 1}
+                      </div>
+                      <h3
+                        className={cn(
+                          "mt-5 text-xl font-bold",
+                          service.workflowTone === "dark"
+                            ? "text-white"
+                            : "text-slate-950",
+                        )}
+                      >
+                        {step.title}
+                      </h3>
+                      <p
+                        className={cn(
+                          "mt-3 leading-relaxed",
+                          service.workflowTone === "dark"
+                            ? "text-slate-300"
+                            : "text-slate-600",
+                        )}
+                      >
+                        {step.description}
+                      </p>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
+              {/* Navigation Buttons */}
+              <button
+                className="workflow-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 sm:-translate-x-14 z-10 p-2 rounded-full hover:bg-opacity-80 transition-all"
+                aria-label="Previous slide"
+              >
+                <ChevronLeft
                   className={cn(
-                    "rounded-[1.75rem] border p-6",
+                    "h-6 w-6",
                     service.workflowTone === "dark"
-                      ? "border-white/10 bg-white/5 text-white"
-                      : "border-slate-200 bg-slate-50",
+                      ? "text-white"
+                      : "text-slate-950",
                   )}
-                >
-                  <div
-                    className={cn(
-                      "flex h-12 w-12 items-center justify-center rounded-2xl text-lg font-bold",
-                      service.workflowTone === "dark"
-                        ? "bg-secondary text-slate-950"
-                        : "bg-secondary/50 text-white",
-                    )}
-                  >
-                    {index + 1}
-                  </div>
-                  <h3
-                    className={cn(
-                      "mt-5 text-xl font-bold",
-                      service.workflowTone === "dark"
-                        ? "text-white"
-                        : "text-slate-950",
-                    )}
-                  >
-                    {step.title}
-                  </h3>
-                  <p
-                    className={cn(
-                      "mt-3 leading-relaxed",
-                      service.workflowTone === "dark"
-                        ? "text-slate-300"
-                        : "text-slate-600",
-                    )}
-                  >
-                    {step.description}
-                  </p>
-                </div>
-              ))}
+                />
+              </button>
+              <button
+                className="workflow-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 sm:translate-x-14 z-10 p-2 rounded-full hover:bg-opacity-80 transition-all"
+                aria-label="Next slide"
+              >
+                <ChevronRight
+                  className={cn(
+                    "h-6 w-6",
+                    service.workflowTone === "dark"
+                      ? "text-white"
+                      : "text-slate-950",
+                  )}
+                />
+              </button>
+
+              {/* Pagination */}
+              <div
+                className="workflow-pagination mt-8 flex justify-center gap-2"
+              />
             </div>
           </div>
         </section>
@@ -480,6 +545,39 @@ export const ServicePage = ({ service }: ServicePageProps) => {
           </div>
         </div>
       </section>
+
+      <style jsx>{`
+        :global(.workflow-swiper) {
+          padding: 0 40px;
+        }
+
+        :global(.workflow-swiper .swiper-pagination-bullet) {
+          background-color: currentColor;
+          opacity: 0.3;
+          transition: opacity 0.3s ease;
+        }
+
+        :global(.workflow-swiper .swiper-pagination-bullet-active) {
+          opacity: 1;
+        }
+
+        @media (max-width: 640px) {
+          :global(.workflow-swiper) {
+            padding: 0;
+          }
+
+          :global(.workflow-prev),
+          :global(.workflow-next) {
+            display: none !important;
+          }
+        }
+
+        @media (min-width: 641px) and (max-width: 1023px) {
+          :global(.workflow-swiper) {
+            padding: 0 20px;
+          }
+        }
+      `}</style>
     </div>
   );
 };
