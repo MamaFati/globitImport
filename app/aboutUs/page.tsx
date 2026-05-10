@@ -70,7 +70,7 @@ const About: React.FC = () => {
               <h2 className="mb-8 border-l-4 border-secondary pl-6 text-3xl font-black text-slate-900">
                 Redefining the import journey for every Ghanaian.
               </h2>
-              <div className="space-y-6 text-lg px-4 leading-relaxed text-slate-600">
+              <div className="space-y-6 text-gray-600 text-lg sm:text-base leading-relaxed mb-8">
                 <p>
                   In 2022, Globit Imports started with a simple mission: to make
                   high-quality international products accessible to every

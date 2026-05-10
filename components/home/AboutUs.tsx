@@ -26,7 +26,7 @@ const AboutUs = () => {
           <h3 className="text-balance text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
             The Globit Story: Built on Experience, Driven by Growth.
           </h3>
-          <p className="mt-5 text-left text-base leading-7 text-slate-600 sm:text-lg">
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-8">
             In 2022, Globit Imports started with a simple mission: to make
             high-quality international products accessible to every Ghanaian
             without the fear of being scammed or overcharged. Our founder
