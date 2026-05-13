@@ -34,7 +34,7 @@ const ServicesComponent = () => {
 
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-white transition-all hover:bg-slate-800"
+            className="inline-flex items-center gap-2   text-secondary px-6 py-3 text-sm font-bold uppercase tracking-[0.2em]   transition-all  "
           >
             View all services
             <ArrowRight className="h-4 w-4" />
@@ -45,7 +45,7 @@ const ServicesComponent = () => {
           {servicePages.map((service, index) => (
             <div
               key={service.slug}
-              className="group animate-reveal overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+              className="group animate-reveal overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-md transition-all duration-500 hover:-translate-y-2 "
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative h-56 overflow-hidden">

@@ -54,15 +54,15 @@ const Contact = () => {
   return (
     <div className="bg-slate-50">
       {/* Hero Section */}
-      <div className="relative bg-slate-900 py-24">
+      <div className="relative bg-slate-900 py-30">
         <div className="absolute inset-0 z-0 overflow-hidden">
-          <Image
+          {/* <Image
             src={backImage}
             alt="Contact Background"
             width={2000}
             height={1200}
             className="h-full w-full scale-105 object-cover opacity-20 animate-soft-float"
-          />
+          /> */}
           <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(213,173,54,0.2),rgba(2,6,23,0.05),rgba(29,78,216,0.2))] bg-[length:220%_220%] animate-bg-pan" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8 animate-fade-in">
@@ -83,78 +83,81 @@ const Contact = () => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
             {/* Contact Information Cards */}
-            <div className="space-y-8 lg:col-span-1">
+            <div className="space-y-10 lg:col-span-1 bg-white   border border-slate-200 rounded-2xl p-8 shadow-md">
+              <h1 className="text-center">Quick Contact</h1>
+              {/* <Image
+            src={backImage}
+            alt="Contact Background"
+            width={500}
+            height={500}
+            className="h-10 w-10 scale-105  opacity-20 animate-soft-float"
+          /> */}
               {/* Email Card */}
-              <div
-                className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 p-8 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 animate-fade-up"
-                style={{ animationDelay: "0ms" }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-100/50 to-indigo-100/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                <div className="relative z-10">
-                  <div className="mb-4 inline-flex rounded-lg bg-blue-500/20 p-3">
+              <div>
+                <div className="absolute inset-0  opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="relative flex gap-2 z-10">
+                  <div className="mb-4 inline-flex  p-3">
                     <Mail className="h-6 w-6 text-blue-600" />
                   </div>
-                  <h3 className="mb-2 text-lg font-bold text-slate-900">
-                    Email
-                  </h3>
-                  <p className="text-slate-600">
-                    <a
-                      href="mailto:info@globitimports.com"
-                      className="hover:text-blue-600 transition-colors"
-                    >
-                      info@globitimports.com
-                    </a>
-                  </p>
-                  <p className="text-sm text-slate-500 mt-1">
-                    We respond within 24 hours
-                  </p>
+                  <div>
+                    <h3 className="mb-1 text-lg font-bold text-slate-900">
+                      Email
+                    </h3>
+                    <p className="text-slate-600">
+                      <a
+                        href="mailto:info@globitimports.com"
+                        className="hover:text-blue-600 transition-colors"
+                      >
+                        info@globitimports.com
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* Phone Card */}
-              <div
-                className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-secondary/20 to-yellow-50 p-8 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 animate-fade-up"
-                style={{ animationDelay: "100ms" }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-secondary/30 to-yellow-100/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                <div className="relative z-10">
-                  <div className="mb-4 inline-flex rounded-lg bg-secondary/20 p-3">
+              <div>
+                <div className="absolute inset-0   opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="relative flex gap-2 z-10">
+                  <div className="mb-4 inline-flex  p-3">
                     <Phone className="h-6 w-6 text-custom-green" />
                   </div>
-                  <h3 className="mb-2 text-lg font-bold text-slate-900">
-                    Phone
-                  </h3>
-                  <p className="text-slate-600">
-                    <a
-                      href="tel:+1234567890"
-                      className="hover:text-custom-green transition-colors"
-                    >
-                      +1 (234) 567-890
-                    </a>
-                  </p>
-                  <p className="text-sm text-slate-500 mt-1">
-                    Mon-Fri, 9AM-6PM EST
-                  </p>
+                  <div>
+                    <h3 className="mb-1 text-lg font-bold text-slate-900">
+                      Phone
+                    </h3>
+                    <p className="text-slate-600">
+                      <a
+                        href="tel:+233551193503"
+                        className="flex min-h-10 items-center gap-3 rounded-xl py-1 transition-colors hover:text-blue-600 "
+                      >
+                        <span>+233-5511-93503</span>
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* Location Card */}
-              <div
-                className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 p-8 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 animate-fade-up"
-                style={{ animationDelay: "200ms" }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-100/50 to-pink-100/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                <div className="relative z-10">
-                  <div className="mb-4 inline-flex rounded-lg bg-purple-500/20 p-3">
+              <div>
+                <div className="absolute inset-0   opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="relative flex gap-2 z-10">
+                  <div className="mb-4 inline-flex    p-3">
                     <MapPin className="h-6 w-6 text-purple-600" />
                   </div>
-                  <h3 className="mb-2 text-lg font-bold text-slate-900">
-                    Location
-                  </h3>
-                  <p className="text-slate-600">Shanghai, China</p>
-                  <p className="text-sm text-slate-500 mt-1">
-                    Serving customers worldwide
-                  </p>
+                  <div>
+                    <h3 className="mb-1 text-lg font-bold text-slate-900">
+                      Location
+                    </h3>
+                    <a
+                      href="https://maps.google.com/?q=Atwima+Takyiman,+Kumasi,+Ghana"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex min-h-10 items-start gap-3 rounded-xl py-1 transition-colors hover:text-blue-600  "
+                    >
+                      <span>Atwima Takyiman, Kumasi, Ghana</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -287,11 +290,11 @@ const Contact = () => {
                   )}
 
                   {/* Submit Button */}
-                  <div className="flex justify-end">
+                  <div className="flex  ">
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 disabled:opacity-70"
+                      className="relative bg-secondary py-5 font-bold text-white hover:secondary/10 disabled:opacity-70 w-full"
                     >
                       {isSubmitting ? (
                         <>
@@ -311,24 +314,27 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
-        <div className="absolute inset-0 overflow-hidden">
+      <section className="relative py-20 bg-custom-background text-slate-600">
+        {/* <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-white/5 blur-3xl" />
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-white/5 blur-3xl" />
-        </div>
+        </div> */}
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+          <h2 className="mb-4 text-3xl font-bold text- md:text-4xl">
             Not Ready to Send a Message?
           </h2>
-          <p className="mb-8 text-lg text-blue-100">
-            Browse our FAQs or learn more about our services to find quick
-            answers.
+          <p className="mb-8 text-lg text-blue-500">
+            <a href="#">
+              {" "}
+              Browse our FAQs or learn more about our services to find quick
+              answers.
+            </a>
           </p>
           <div className="flex flex-col gap-3 sm:flex-row justify-center sm:items-center">
             <a href="/blog" className="inline-block">
               <Button
                 variant="outline"
-                className="border-white text-white hover:bg-white/10"
+                className="border-white   hover:bg-white/10"
               >
                 Read Our Blog
               </Button>
@@ -336,7 +342,7 @@ const Contact = () => {
             <a href="/services" className="inline-block">
               <Button
                 variant="outline"
-                className="border-white text-white hover:bg-white/10"
+                className="border-white   hover:bg-white/10"
               >
                 Explore Services
               </Button>

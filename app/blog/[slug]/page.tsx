@@ -55,7 +55,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
     <div className="min-h-screen bg-slate-50 pb-16">
       <section className="relative overflow-hidden bg-slate-950 px-4 py-16 text-white md:py-20">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(255,255,255,0.2),transparent_40%),radial-gradient(circle_at_90%_90%,rgba(213,173,54,0.28),transparent_45%)]" />
-        <div className="relative mx-auto max-w-4xl">
+        <div className="relative mx-auto max-w-6xl py-10">
           <Button
             asChild
             variant="ghost"
@@ -88,8 +88,8 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
         </div>
       </section>
 
-      <main className="mx-auto mt-8 flex max-w-4xl flex-col gap-8 px-4">
-        <Card className="overflow-hidden border-white/60 bg-white/95 shadow-lg">
+      <main className="mx-auto mt-8 flex max-w-6xl flex-col gap-8 px-4">
+        <Card className="overflow-hidden   bg-white/95 shadow-md">
           <div className="relative aspect-[16/9]">
             <Image
               src={post.image}
@@ -100,7 +100,9 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
             />
           </div>
           <CardContent className="px-6 py-8 md:px-10">
-            <p className="text-muted-foreground text-lg leading-8">{post.excerpt}</p>
+            <p className="text-muted-foreground text-lg leading-8">
+              {post.excerpt}
+            </p>
             <article className="mt-8 space-y-6 text-slate-700">
               {post.content.map((paragraph) => (
                 <p key={paragraph} className="text-base leading-8 md:text-lg">
@@ -118,12 +120,17 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
             </h2>
             <div className="grid auto-rows-fr grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {morePosts.map((item) => (
-                <Card key={item.slug} className="flex h-full flex-col border-white/60 bg-white/95">
+                <Card
+                  key={item.slug}
+                  className="flex h-full flex-col border-white/60 bg-white/95"
+                >
                   <CardHeader className="space-y-2">
                     <Badge variant="secondary" className="w-fit">
                       {item.category}
                     </Badge>
-                    <CardTitle className="text-base leading-6">{item.title}</CardTitle>
+                    <CardTitle className="text-base leading-6">
+                      {item.title}
+                    </CardTitle>
                     <CardDescription className="line-clamp-2 text-sm">
                       {item.excerpt}
                     </CardDescription>
@@ -143,5 +150,5 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
         )}
       </main>
     </div>
-  )
+  );
 }

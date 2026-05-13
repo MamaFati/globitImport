@@ -17,14 +17,14 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4 lg:gap-12">
           <div>
-            <Link href="/" className="flex items-center gap-2">
+            {/* <Link href="/" className="flex items-center gap-2">
               <Image
                 src={AppLogo}
                 alt="Globit Logo"
                 width={84}
                 height={5}
               />
-            </Link>
+            </Link> */}
             <p className="mt-4 text-sm leading-6 text-slate-400 sm:hidden">
               China to Ghana shipping and sourcing support for businesses that
               want a cleaner import process.
